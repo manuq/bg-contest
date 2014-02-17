@@ -47,6 +47,8 @@ Development
     ```
     python __init__.py
     ```
+    
+    
 
 5. In another console, serve media:
 
@@ -54,3 +56,9 @@ Development
     cd media
     python -m SimpleHTTPServer
     ```
+
+Deployment
+----------
+
+Pay attention to all the comments in `__init.py__` that start with #FIXME PROD
+
