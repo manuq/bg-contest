@@ -136,12 +136,6 @@ def este_formu_vale(formu, archivos):
         'conditions-accepted': formu.get('conditions-accepted', None) == 'on',
         }
 
-    person_photo = archivos.get('person-photo', None)
-    if person_photo is None:
-        datos['person-photo'] = ''
-    else:
-        datos['person-photo'] = person_photo.filename
-
     bg_image = archivos.get('bg-image', None)
     if bg_image is None:
         datos['bg-image'] = ''
@@ -153,14 +147,13 @@ def este_formu_vale(formu, archivos):
     errores = {}
 
     mandatory_fields = ('person-name', 'person-email', 'person-age',
-                        'person-country', 'person-photo', 'bg-title',
-                        'bg-image')
+                        'person-country', 'bg-title', 'bg-image')
 
     for field_name in mandatory_fields:
         if datos[field_name] == "":
             errores[field_name] = u"This field is mandatory."
 
-    file_fields = ('person-photo', 'bg-image')
+    file_fields = ('bg-image',)
 
     for field_name in file_fields:
         if not es_archivo_permitido(datos[field_name]):
@@ -194,12 +187,6 @@ def submit():
             if not os.path.exists(subdir):
                 os.makedirs(subdir)
 
-            filename_photo = os.path.join(subdir, secure_filename(datos['person-photo']))
-            request.files['person-photo'].save(filename_photo)
-
-            url_photo = os.path.join(secure_filename(datos['bg-title']),
-                                     secure_filename(datos['person-photo']))
-
             filename_background = os.path.join(subdir, secure_filename(datos['bg-image']))
             request.files['bg-image'].save(filename_background)
 
@@ -209,13 +196,12 @@ def submit():
             # guardar en la base de datos
 
             cur = get_db().cursor()
-            cur.execute('insert into contest values (?,?,?,?,?,?,?,?)',
+            cur.execute('insert into contest values (?,?,?,?,?,?,?)',
                         (None,
                          datos['person-name'],
                          datos['person-email'],
                          datos['person-age'],
                          datos['person-country'],
-                         url_photo,
                          datos['bg-title'],
                          url_background,
                          ))
