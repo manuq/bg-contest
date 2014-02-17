@@ -33,7 +33,11 @@ Development
     ```
 
 3. Create database:
+    ```
+    python -c "from __init__ import init_db; init_db()"
+    ```
 
+    Or
     ```
     sqlite3 contest.db < schema.sql
     ```
