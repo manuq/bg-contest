@@ -29,17 +29,15 @@
             <img src="{{ url_for('static', filename='contest/img/logo.png') }}" alt="Sugarlabs">
         </a>
         <a class="navbar-brand" href="{{ url_for('index') }}">
-            Background Image Contest
+            Contest
+        </a>
+        <a class="navbar-brand" href="{{ url_for('steps') }}">
+            Help
+        </a>
+        <a class="navbar-brand" href="{{ url_for('submit') }}">
+            Submit
         </a>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="{{ url_for('submit') }}">Submit</a></li>
-        </ul>
-      </div>
-
     </nav>
   </header>
 

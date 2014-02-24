@@ -212,6 +212,10 @@ def submit():
 
     return render_template('form.html', datos=datos, errores=errores)
 
+@app.route('/steps')
+def steps():
+    return render_template('steps.html')
+
 @app.route('/admin')
 @login_required
 def admin():

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block contenido %}
+<h2>How to test your background images</h2>
+<p>
+If you are using Sugar 0.100 or later, you can test your background image following
+these steps.
+</p>
+
+<div class="text-left">
+    <h3>1 - Use any activity you want. </h3>
+    <img src="{{ url_for('static', filename='contest/img/steps/01.png') }}" height="50%" width="50%" alt="">
+</div>
+
+<div class="text-left">
+    <h3>2 - Be creative!</h3>
+    <img src="{{ url_for('static', filename='contest/img/steps/02.png') }}" height="50%" width="50%" alt="">
+</div>
+
+<div class="text-left">
+    <h3>3 - Copy your image to the Documents folder.</h3>
+    <img src="{{ url_for('static', filename='contest/img/steps/03.png') }}" height="50%" width="50%" alt="">
+</div>
+
+<div class="text-left">
+    <h3>4 - Go to "My Settings" and then "Background" to select your image.</h3>
+    <img src="{{ url_for('static', filename='contest/img/steps/04.png') }}" height="50%" width="50%" alt="">
+</div>
+
+<div class="text-left">
+    <h3>5 - It's ready!</h3>
+    <img src="{{ url_for('static', filename='contest/img/steps/05.png') }}" height="50%" width="50%" alt="">
+</div>
+
+{% endblock %}
