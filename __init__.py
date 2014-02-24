@@ -31,6 +31,7 @@ PRODUCCION = False
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = CARPETA_SUBIDOS
+app.config['PROPAGATE_EXCEPTIONS'] = True
 
 # FIXME PROD cambiar
 # >>> import os
