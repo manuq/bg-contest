@@ -67,13 +67,11 @@ Translations
 
 To add a new language, run (example with 'es'):
 
-    ```
     pybabel init -i translations/messages.pot -d translations -l es
-    ```
 
 To add translatable strings
 
-1. add these tags around the text: `{% trans %}{% endtrans %}`.
+1. add these tags around the text: `{% trans %}text here{% endtrans %}`.
 
 2. run `./babel_extract.sh`
 
