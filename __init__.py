@@ -17,6 +17,7 @@ from flask.ext.login import login_required
 from flask.ext.login import login_user
 from flask.ext.login import logout_user
 from flask.ext.login import current_user
+from flask.ext.babel import Babel
 
 from werkzeug import secure_filename
 
@@ -37,6 +38,8 @@ app.config['PROPAGATE_EXCEPTIONS'] = True
 # >>> import os
 # >>> os.urandom(24)
 app.secret_key = "unodostres"
+
+babel = Babel(app)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
