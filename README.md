@@ -47,8 +47,8 @@ Development
     ```
     python __init__.py
     ```
-    
-    
+
+
 
 5. In another console, serve media:
 
@@ -62,3 +62,21 @@ Deployment
 
 Pay attention to all the comments in `__init.py__` that start with #FIXME PROD
 
+Translations
+------------
+
+To add a new language, run (example with 'es'):
+
+    ```
+    pybabel init -i translations/messages.pot -d translations -l es
+    ```
+
+To add translatable strings
+
+1. add these tags around the text: `{% trans %}{% endtrans %}`.
+
+2. run `./babel_extract.sh`
+
+3. edit the po files with a po editor
+
+4. run `./babel_compile.sh`

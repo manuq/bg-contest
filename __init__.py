@@ -34,6 +34,9 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = CARPETA_SUBIDOS
 app.config['PROPAGATE_EXCEPTIONS'] = True
 
+# FIXME, just an example
+app.config['BABEL_DEFAULT_LOCALE'] = 'es'
+
 # FIXME PROD cambiar
 # >>> import os
 # >>> os.urandom(24)

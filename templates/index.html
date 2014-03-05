@@ -1,17 +1,19 @@
 {% extends "base.html" %}
 {% block title %}{% endblock %}
 {% block contenido %}
-<h2>Sugarlabs Background Image Contest</h2>
+<h2>{% trans %}Sugarlabs Background Image Contest{% endtrans %}</h2>
 <p>
+{% trans %}
 Sugarlabs is glad to announce the first contest for Sugar Background Images.
 We'll choose 10 images that will form a pack of user-contributed backgrounds.
+{% endtrans %}
 </p>
 
 <div class="text-center">
     <img src="{{ url_for('static', filename='contest/img/home.png') }}" alt="Sugarlabs">
 </div>
 
-<h3>1 - Create your background image:</h3>
+<h3>{% trans %}1 - Create your background image:{% endtrans %}</h3>
 <ul>
     <li>Be creative! You can use Paint or Turtle Blocks, Record to take photos, or any other Sugar activity.</li>
     <li>You are not restricted to Sugar activities.</li>
