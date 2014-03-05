@@ -34,9 +34,6 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = CARPETA_SUBIDOS
 app.config['PROPAGATE_EXCEPTIONS'] = True
 
-# FIXME, just an example
-app.config['BABEL_DEFAULT_LOCALE'] = 'es'
-
 # FIXME PROD cambiar
 # >>> import os
 # >>> os.urandom(24)
@@ -69,6 +66,10 @@ class Usuario(UserMixin):
         return self.id
 
 usuario_admin = Usuario(u'admin')
+
+@babel.localeselector
+def get_locale():
+    return request.accept_languages.best_match(['en', 'es'])
 
 @login_manager.user_loader
 def cargar_usuario(id_usuario):
