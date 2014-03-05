@@ -2,6 +2,7 @@
 import os
 import re
 import sqlite3
+from gettext import gettext as _
 
 from flask import Flask
 from flask import render_template
@@ -159,7 +160,7 @@ def este_formu_vale(formu, archivos):
 
     for field_name in mandatory_fields:
         if datos[field_name] == "":
-            errores[field_name] = u"This field is mandatory."
+            errores[field_name] = _("This field is mandatory.")
 
     file_fields = ('bg-image',)
 
@@ -171,10 +172,10 @@ def este_formu_vale(formu, archivos):
 
     for field_name in email_fields:
         if not re.match(r"[^@]+@[^@]+\.[^@]+", datos[field_name]):
-            errores[field_name] = u"Please write a valid email."
+            errores[field_name] = _("Please write a valid email.")
 
     if not datos['conditions-accepted']:
-        errores['conditions-accepted'] = u"You need to agree with this contest's conditions in order to participate."
+        errores['conditions-accepted'] = _("You need to agree with this contest's conditions in order to participate.")
 
     return datos, errores
 

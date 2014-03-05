@@ -15,22 +15,22 @@ We'll choose 10 images that will form a pack of user-contributed backgrounds.
 
 <h3>{% trans %}1 - Create your background image:{% endtrans %}</h3>
 <ul>
-    <li>Be creative! You can use Paint or Turtle Blocks, Record to take photos, or any other Sugar activity.</li>
-    <li>You are not restricted to Sugar activities.</li>
-    <li>You can submit as many entries as you like.</li>
-    <li>Try to use size 1600 x 1200 pixels.  Or if you are using a Sugar activity, use its default size.</li>
+    <li>{% trans %}Be creative! You can use Paint or Turtle Blocks, Record to take photos, or any other Sugar activity.{% endtrans %}</li>
+    <li>{% trans %}You are not restricted to Sugar activities.{% endtrans %}</li>
+    <li>{% trans %}You can submit as many entries as you like.{% endtrans %}</li>
+    <li>{% trans %}Try to use size 1600 x 1200 pixels.  Or if you are using a Sugar activity, use its default size.{% endtrans %}</li>
 </ul>
 
-<h3>2 - Follow these terms and conditions:</h3>
+<h3>{% trans %}2 - Follow these terms and conditions:{% endtrans %}</h3>
 <ul>
-    <li>Be the author of your entry. Derivative work is allowed too.</li>
-    <li>Use the <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-by-sa</a> license, so everyone can enjoy your art!</li>
-    <li>Don't forget to submit it as PNG format!</li>
+    <li>{% trans %}Be the author of your entry. Derivative work is allowed too.{% endtrans %}</li>
+    <li>{% trans %}Use the <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-by-sa</a> license, so everyone can enjoy your art!{% endtrans %}</li>
+    <li>{% trans %}Don't forget to submit it as PNG format!{% endtrans %}</li>
 </ul>
 
-<h3>3 - Make a significant contribution to Sugar:</h3>
+<h3>{% trans %}3 - Make a significant contribution to Sugar:{% endtrans %}</h3>
 <p>
-    <a class="btn btn-success" href="{{ url_for('submit') }}"><span class="glyphicon glyphicon-check"></span> Submit</a>
+    <a class="btn btn-success" href="{{ url_for('submit') }}"><span class="glyphicon glyphicon-check"></span> {% trans %}Submit{% endtrans %}</a>
 </p>
 
 {% endblock %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-03-05 14:53-0300\n"
+"POT-Creation-Date: 2014-03-05 15:28-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,96 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
+
+#: __init__.py:163
+msgid "This field is mandatory."
+msgstr ""
+
+#: __init__.py:175
+msgid "Please write a valid email."
+msgstr ""
+
+#: __init__.py:178
+msgid "You need to agree with this contest's conditions in order to participate."
+msgstr ""
+
+#: templates/base.html:7
+msgid "Sugar Background Image Contest"
+msgstr ""
+
+#: templates/base.html:23
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/base.html:32
+msgid "Contest"
+msgstr ""
+
+#: templates/base.html:35
+msgid "Help"
+msgstr ""
+
+#: templates/base.html:38 templates/index.html:33
+msgid "Submit"
+msgstr ""
+
+#: templates/form.html:4
+msgid "Submit!"
+msgstr ""
+
+#: templates/form.html:8
+msgid "About you"
+msgstr ""
+
+#: templates/form.html:11
+msgid "Full name"
+msgstr ""
+
+#: templates/form.html:22
+msgid "Email"
+msgstr ""
+
+#: templates/form.html:33
+msgid "Age"
+msgstr ""
+
+#: templates/form.html:44
+msgid "Country"
+msgstr ""
+
+#: templates/form.html:54
+msgid "About the background"
+msgstr ""
+
+#: templates/form.html:57
+msgid "Title"
+msgstr ""
+
+#: templates/form.html:68
+msgid "Background"
+msgstr ""
+
+#: templates/form.html:71
+msgid "Select a PNG image from your computer."
+msgstr ""
+
+#: templates/form.html:80
+msgid "I accept the contest conditions."
+msgstr ""
+
+#: templates/form.html:92
+msgid ""
+"\n"
+"    Please notice that all data collected will be used for the Sugar Labs"
+"\n"
+"    Background Image contest only. It will not be used for any other "
+"purposes.\n"
+"    "
+msgstr ""
+
+#: templates/form.html:99
+msgid "Send"
+msgstr ""
 
 #: templates/index.html:4
 msgid "Sugarlabs Background Image Contest"
@@ -32,5 +122,87 @@ msgstr ""
 
 #: templates/index.html:16
 msgid "1 - Create your background image:"
+msgstr ""
+
+#: templates/index.html:18
+msgid ""
+"Be creative! You can use Paint or Turtle Blocks, Record to take photos, "
+"or any other Sugar activity."
+msgstr ""
+
+#: templates/index.html:19
+msgid "You are not restricted to Sugar activities."
+msgstr ""
+
+#: templates/index.html:20
+msgid "You can submit as many entries as you like."
+msgstr ""
+
+#: templates/index.html:21
+msgid ""
+"Try to use size 1600 x 1200 pixels.  Or if you are using a Sugar "
+"activity, use its default size."
+msgstr ""
+
+#: templates/index.html:24
+msgid "2 - Follow these terms and conditions:"
+msgstr ""
+
+#: templates/index.html:26
+msgid "Be the author of your entry. Derivative work is allowed too."
+msgstr ""
+
+#: templates/index.html:27
+msgid ""
+"Use the <a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC-by-"
+"sa</a> license, so everyone can enjoy your art!"
+msgstr ""
+
+#: templates/index.html:28
+msgid "Don't forget to submit it as PNG format!"
+msgstr ""
+
+#: templates/index.html:31
+msgid "3 - Make a significant contribution to Sugar:"
+msgstr ""
+
+#: templates/steps.html:4
+msgid "How to test your background images"
+msgstr ""
+
+#: templates/steps.html:6
+msgid ""
+"\n"
+"If you are using Sugar 0.100 or later, you can test your background image"
+" following\n"
+"these steps.\n"
+msgstr ""
+
+#: templates/steps.html:13
+msgid "1 - Use any activity you want."
+msgstr ""
+
+#: templates/steps.html:18
+msgid "2 - Be creative!"
+msgstr ""
+
+#: templates/steps.html:23
+msgid "3 - Copy your image to the Documents folder."
+msgstr ""
+
+#: templates/steps.html:28
+msgid "4 - Go to \"My Settings\" and then \"Background\" to select your image."
+msgstr ""
+
+#: templates/steps.html:33
+msgid "5 - It's ready!"
+msgstr ""
+
+#: templates/thanks.html:4
+msgid "Thanks for participating!"
+msgstr ""
+
+#: templates/thanks.html:6
+msgid "We'll let you know the results."
 msgstr ""
 

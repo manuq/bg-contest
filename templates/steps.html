@@ -1,34 +1,36 @@
 {% extends "base.html" %}
 {% block title %}{% endblock %}
 {% block contenido %}
-<h2>How to test your background images</h2>
+<h2>{% trans %}How to test your background images{% endtrans %}</h2>
 <p>
+{% trans %}
 If you are using Sugar 0.100 or later, you can test your background image following
 these steps.
+{% endtrans %}
 </p>
 
 <div class="text-left">
-    <h3>1 - Use any activity you want. </h3>
+    <h3>{% trans %}1 - Use any activity you want.{% endtrans %}</h3>
     <img src="{{ url_for('static', filename='contest/img/steps/01.png') }}" height="50%" width="50%" alt="">
 </div>
 
 <div class="text-left">
-    <h3>2 - Be creative!</h3>
+    <h3>{% trans %}2 - Be creative!{% endtrans %}</h3>
     <img src="{{ url_for('static', filename='contest/img/steps/02.png') }}" height="50%" width="50%" alt="">
 </div>
 
 <div class="text-left">
-    <h3>3 - Copy your image to the Documents folder.</h3>
+    <h3>{% trans %}3 - Copy your image to the Documents folder.{% endtrans %}</h3>
     <img src="{{ url_for('static', filename='contest/img/steps/03.png') }}" height="50%" width="50%" alt="">
 </div>
 
 <div class="text-left">
-    <h3>4 - Go to "My Settings" and then "Background" to select your image.</h3>
+    <h3>{% trans %}4 - Go to "My Settings" and then "Background" to select your image.{% endtrans %}</h3>
     <img src="{{ url_for('static', filename='contest/img/steps/04.png') }}" height="50%" width="50%" alt="">
 </div>
 
 <div class="text-left">
-    <h3>5 - It's ready!</h3>
+    <h3>{% trans %}5 - It's ready!{% endtrans %}</h3>
     <img src="{{ url_for('static', filename='contest/img/steps/05.png') }}" height="50%" width="50%" alt="">
 </div>
 

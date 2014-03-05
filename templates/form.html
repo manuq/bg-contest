@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block title %}Hola{% endblock %}
 {% block contenido %}
-<h2>Submit!</h2>
+<h2>{% trans %}Submit!{% endtrans %}</h2>
 <form class="form-horizontal" role="form" method="POST" enctype="multipart/form-data" action="{{ url_for('submit') }}">
   <fieldset>
 
-    <legend>About you</legend>
+    <legend>{% trans %}About you{% endtrans %}</legend>
 
     <div class="form-group {% if 'person-name' in errores.keys() %}has-error{% endif %}">
-      <label for="inputPersonName" class="col-lg-2 control-label">Full name</label>
+      <label for="inputPersonName" class="col-lg-2 control-label">{% trans %}Full name{% endtrans %}</label>
       <div class="col-lg-10">
         <input type="text" name="person-name" id="inputPersonName" class="form-control"
                {% if 'person-name' in datos.keys() %}value="{{ datos['person-name'] }}"{% endif %}>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="form-group  {% if 'person-email' in errores.keys() %}has-error{% endif %}">
-      <label for="inputPersonEmail" class="col-lg-2 control-label">Email</label>
+      <label for="inputPersonEmail" class="col-lg-2 control-label">{% trans %}Email{% endtrans %}</label>
       <div class="col-lg-10">
         <input type="email" name="person-email" id="inputPersonEmail" class="form-control"
                {% if 'person-email' in datos.keys() %}value="{{ datos['person-email'] }}"{% endif %}>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="form-group {% if 'person-age' in errores.keys() %}has-error{% endif %}">
-      <label for="inputPersonAge" class="col-lg-2 control-label">Age</label>
+      <label for="inputPersonAge" class="col-lg-2 control-label">{% trans %}Age{% endtrans %}</label>
       <div class="col-lg-10">
         <input type="number" name="person-age" id="inputPersonAge" class="form-control"
                {% if 'person-age' in datos.keys() %}value="{{ datos['person-age'] }}"{% endif %}>
@@ -41,7 +41,7 @@
     </div>
 
     <div class="form-group {% if 'person-country' in errores.keys() %}has-error{% endif %}">
-      <label for="inputPersonCountry" class="col-lg-2 control-label">Country</label>
+      <label for="inputPersonCountry" class="col-lg-2 control-label">{% trans %}Country{% endtrans %}</label>
       <div class="col-lg-10">
         <input type="text" name="person-country" id="inputPersonCountry" class="form-control"
                {% if 'person-country' in datos.keys() %}value="{{ datos['person-country'] }}"{% endif %}>
@@ -51,10 +51,10 @@
       </div>
     </div>
 
-    <legend>About the background</legend>
+    <legend>{% trans %}About the background{% endtrans %}</legend>
 
     <div class="form-group {% if 'bg-title' in errores.keys() %}has-error{% endif %}">
-      <label for="inputBgTitle" class="col-lg-2 control-label">Title</label>
+      <label for="inputBgTitle" class="col-lg-2 control-label">{% trans %}Title{% endtrans %}</label>
       <div class="col-lg-10">
         <input type="text" name="bg-title" id="inputBgTitle" class="form-control"
                {% if 'bg-title' in datos.keys() %}value="{{ datos['bg-title'] }}"{% endif %}>
@@ -65,10 +65,10 @@
     </div>
 
     <div class="form-group {% if 'bg-image' in errores.keys() %}has-error{% endif %}">
-      <label for="inputBgImage" class="col-lg-2 control-label">Background</label>
+      <label for="inputBgImage" class="col-lg-2 control-label">{% trans %}Background{% endtrans %}</label>
       <div class="col-lg-10 {% if 'bg-image' in errores.keys() %}has-error{% endif %}">
         <input type="file" name="bg-image" id="inputBgImage">
-        <span class="help-block">Select a PNG image from your computer.</span>
+        <span class="help-block">{% trans %}Select a PNG image from your computer.{% endtrans %}</span>
       </div>
     </div>
 
@@ -77,7 +77,7 @@
           <div class="checkbox">
             <label for="inputConditionsAccepted">
               <input type="checkbox" name="conditions-accepted" id="inputConditionsAccepted"
-                     {% if 'conditions-accepted' in datos.keys() and datos['conditions-accepted'] == True %}checked="checked"{% endif %}>I accept the contest conditions.
+                     {% if 'conditions-accepted' in datos.keys() and datos['conditions-accepted'] == True %}checked="checked"{% endif %}>{% trans %}I accept the contest conditions.{% endtrans %}
             </label>
           </div>
           <div class="{% if 'conditions-accepted' in errores.keys() %}has-error{% endif %}">
@@ -89,12 +89,14 @@
     </div>
 
     <p>
+    {% trans %}
     Please notice that all data collected will be used for the Sugar Labs
     Background Image contest only. It will not be used for any other purposes.
+    {% endtrans %}
     </p>
 
     <fieldset>
-        <button type="submit" class="btn btn-success btn-large">Send</button>
+        <button type="submit" class="btn btn-success btn-large">{% trans %}Send{% endtrans %}</button>
     </fieldset>
 
   </fieldset>
