@@ -1,209 +1,210 @@
-# German translations for PROJECT.
+# Translations template for PROJECT.
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-03-05 15:28-0300\n"
-"PO-Revision-Date: 2014-03-17 15:23-0300\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"PO-Revision-Date: 2014-03-15 21:41+0100\n"
+"Last-Translator: Markus Schlager <m.slg@gmx.de>\n"
+"Language-Team: Deutsch <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
 
 #: __init__.py:163
 msgid "This field is mandatory."
-msgstr ""
+msgstr "Dieses Feld ist verpflichtend."
 
 #: __init__.py:175
 msgid "Please write a valid email."
-msgstr ""
+msgstr "Gib bitte eine gültige Emailadresse an."
 
 #: __init__.py:178
 msgid "You need to agree with this contest's conditions in order to participate."
-msgstr ""
+msgstr "Um teilnehmen zu können, musst du die Wettbewerbsbedingungen akzeptieren."
 
 #: templates/base.html:7
 msgid "Sugar Background Image Contest"
-msgstr ""
+msgstr "Wettbewerb für Sugar-Hintergrundbilder"
 
 #: templates/base.html:23
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Navigation umschalten"
 
 #: templates/base.html:32
 msgid "Contest"
-msgstr ""
+msgstr "Wettbewerb"
 
 #: templates/base.html:35
 msgid "Help"
-msgstr ""
+msgstr "Hilfe"
 
-#: templates/base.html:38 templates/index.html:33
+#: templates/base.html:38
+#: templates/index.html:33
 msgid "Submit"
-msgstr ""
+msgstr "Einreichen"
 
 #: templates/form.html:4
 msgid "Submit!"
-msgstr ""
+msgstr "Einreichen!"
 
 #: templates/form.html:8
 msgid "About you"
-msgstr ""
+msgstr "Über dich"
 
 #: templates/form.html:11
 msgid "Full name"
-msgstr ""
+msgstr "Voller Name"
 
 #: templates/form.html:22
 msgid "Email"
-msgstr ""
+msgstr "Emailadresse"
 
 #: templates/form.html:33
 msgid "Age"
-msgstr ""
+msgstr "Alter"
 
 #: templates/form.html:44
 msgid "Country"
-msgstr ""
+msgstr "Land"
 
 #: templates/form.html:54
 msgid "About the background"
-msgstr ""
+msgstr "Über das Hintergrundbild"
 
 #: templates/form.html:57
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: templates/form.html:68
 msgid "Background"
-msgstr ""
+msgstr "Hintergrundbild"
 
 #: templates/form.html:71
 msgid "Select a PNG image from your computer."
-msgstr ""
+msgstr "Wähle eine PNG-Datei von deinem Rechner."
 
 #: templates/form.html:80
 msgid "I accept the contest conditions."
-msgstr ""
+msgstr "Ich akzeptiere die Wettbewerbsbedingungen."
 
 #: templates/form.html:92
 msgid ""
 "\n"
-"    Please notice that all data collected will be used for the Sugar Labs"
-"\n"
-"    Background Image contest only. It will not be used for any other "
-"purposes.\n"
+"    Please notice that all data collected will be used for the Sugar Labs\n"
+"    Background Image contest only. It will not be used for any other purposes.\n"
 "    "
 msgstr ""
+"\n"
+"    Wir weisen darauf hin, dass alle gesammelten Daten nur im Rahmen dieses Wettbewerbs\n"
+"    für Sugar-Hintergrundbilder genutzt werden. Eine anderweitige Verwendung erfolgt nicht.\n"
+"    "
 
 #: templates/form.html:99
 msgid "Send"
-msgstr ""
+msgstr "Absenden"
 
 #: templates/index.html:4
 msgid "Sugarlabs Background Image Contest"
-msgstr ""
+msgstr "Sugarlabs-Wettbewerb für Hintergrundbilder"
 
 #: templates/index.html:6
 msgid ""
 "\n"
-"Sugarlabs is glad to announce the first contest for Sugar Background "
-"Images.\n"
-"We'll choose 10 images that will form a pack of user-contributed "
-"backgrounds.\n"
+"Sugarlabs is glad to announce the first contest for Sugar Background Images.\n"
+"We'll choose 10 images that will form a pack of user-contributed backgrounds.\n"
 msgstr ""
+"\n"
+"Sugarlabs freut sich, den ersten Wettbewerb für Sugar-Hintergrundbilder anzukündigen.\n"
+"Wir werden 10 Bilder auswählen und sie zu einem Paket von Benutzern kreierter Hintergrundbilder zusammenfassen.\n"
 
 #: templates/index.html:16
 msgid "1 - Create your background image:"
-msgstr ""
+msgstr "1 - Erzeuge dein Hintergrundbild:"
 
 #: templates/index.html:18
-msgid ""
-"Be creative! You can use Paint or Turtle Blocks, Record to take photos, "
-"or any other Sugar activity."
-msgstr ""
+msgid "Be creative! You can use Paint or Turtle Blocks, Record to take photos, or any other Sugar activity."
+msgstr "Sei kreativ! Du kannst \"Malen\" oder \"Schildkrötenblöcke\" benutzen, mit \"Aufnehmen\" Bilder aufzeichnen oder sonst eine Sugar-Aktivität verwenden."
 
 #: templates/index.html:19
 msgid "You are not restricted to Sugar activities."
-msgstr ""
+msgstr "Du bist nicht auf Sugar-Aktivitäten beschränkt."
 
 #: templates/index.html:20
 msgid "You can submit as many entries as you like."
-msgstr ""
+msgstr "Du kannst so viele Beiträge einreichen, wie du willst."
 
 #: templates/index.html:21
-msgid ""
-"Try to use size 1600 x 1200 pixels.  Or if you are using a Sugar "
-"activity, use its default size."
-msgstr ""
+msgid "Try to use size 1600 x 1200 pixels.  Or if you are using a Sugar activity, use its default size."
+msgstr "Verwende eine Bildgröße von 1600 x 1200 Pixeln. Falls du eine Sugar-Aktivität benützt, nutze deren Standardgröße."
 
 #: templates/index.html:24
 msgid "2 - Follow these terms and conditions:"
-msgstr ""
+msgstr "2 - Halte dich an dieses Wettbewerbsbedingungen:"
 
 #: templates/index.html:26
 msgid "Be the author of your entry. Derivative work is allowed too."
-msgstr ""
+msgstr "Du musst der Urheber deines Beitrages sein. Abgeleitete Werke sind auch erlaubt."
 
 #: templates/index.html:27
-msgid ""
-"Use the <a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC-by-"
-"sa</a> license, so everyone can enjoy your art!"
-msgstr ""
+msgid "Use the <a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC-by-sa</a> license, so everyone can enjoy your art!"
+msgstr "Verwende die Lizenz <a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC-by-sa</a>, sodass jeder in den Genuss deiner Kunst kommen kann!"
 
 #: templates/index.html:28
 msgid "Don't forget to submit it as PNG format!"
-msgstr ""
+msgstr "Achte darauf, dein Bild im PNG-Format abzugeben!"
 
 #: templates/index.html:31
 msgid "3 - Make a significant contribution to Sugar:"
-msgstr ""
+msgstr "3 - Trage wesentlich zu Sugar bei:"
 
 #: templates/steps.html:4
 msgid "How to test your background images"
-msgstr ""
+msgstr "So testest du deine Hintergrundbilder"
 
 #: templates/steps.html:6
 msgid ""
 "\n"
-"If you are using Sugar 0.100 or later, you can test your background image"
-" following\n"
+"If you are using Sugar 0.100 or later, you can test your background image following\n"
 "these steps.\n"
 msgstr ""
+"\n"
+"falls du Sugar 0.100 oder später benutzt, kannst du mit folgenden Schritten\n"
+" dein Hintergrundbild testen.\n"
 
 #: templates/steps.html:13
 msgid "1 - Use any activity you want."
-msgstr ""
+msgstr "1 - Benutzt irgendeine Aktivität deiner Wahl."
 
 #: templates/steps.html:18
 msgid "2 - Be creative!"
-msgstr ""
+msgstr "2 - Sei kreativ!"
 
 #: templates/steps.html:23
 msgid "3 - Copy your image to the Documents folder."
-msgstr ""
+msgstr "3 - Kopiere dein Bild in das Dokumentenverzeichnis."
 
 #: templates/steps.html:28
 msgid "4 - Go to \"My Settings\" and then \"Background\" to select your image."
-msgstr ""
+msgstr "4 - Wechsle zu \"Meine Einstellungen\", dort dann zu \"Hintergrund\" und wähle dein Bild aus."
 
 #: templates/steps.html:33
 msgid "5 - It's ready!"
-msgstr ""
+msgstr "5 - Das war's!"
 
 #: templates/thanks.html:4
 msgid "Thanks for participating!"
-msgstr ""
+msgstr "Vielen Dank für deine Teilnahme!"
 
 #: templates/thanks.html:6
 msgid "We'll let you know the results."
-msgstr ""
+msgstr "Wir informieren dich über die Ergebnisse."
 
