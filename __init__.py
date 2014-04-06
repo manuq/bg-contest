@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 import re
+import sys
 import sqlite3
 from gettext import gettext as _
 
@@ -179,6 +180,21 @@ def este_formu_vale(formu, archivos):
 
     return datos, errores
 
+
+def get_unique_filename(path, fn):
+    fullpath = os.path.join(path, fn)
+    if not os.path.exists(fullpath):
+        return fn
+
+    for i in xrange(2, sys.maxint):
+        unique_fn = '%s-%d' % (fn, i)
+        fullpath = os.path.join(path, unique_fn)
+        if not os.path.exists(fullpath):
+            return fullpath
+
+    return None
+
+
 @app.route('/submit', methods=['GET', 'POST'])
 def submit():
     datos = {}
@@ -189,12 +205,9 @@ def submit():
 
             # guardar archivos
 
-            # FIXME, needs to check for duplicates
-            subdir = os.path.join(app.config['UPLOAD_FOLDER'],
-                                  secure_filename(datos['bg-title']))
-
-            if not os.path.exists(subdir):
-                os.makedirs(subdir)
+            title = secure_filename(datos['bg-title'])
+            subdir = get_unique_filename(app.config['UPLOAD_FOLDER'], title)
+            os.makedirs(subdir)
 
             filename_background = os.path.join(subdir, secure_filename(datos['bg-image']))
             request.files['bg-image'].save(filename_background)
