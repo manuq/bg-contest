@@ -1,4 +1,4 @@
-# Translations template for PROJECT.
+# French translations for PROJECT.
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -7,24 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-03-05 15:28-0300\n"
+"POT-Creation-Date: 2014-04-07 13:56-0400\n"
 "PO-Revision-Date: 2014-03-15 01:12+0100\n"
 "Last-Translator: Samy Boutayeb <s.boutayeb@free.fr>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: __init__.py:163
+#: __init__.py:164
 msgid "This field is mandatory."
 msgstr "Ce champ est obligatoire."
 
-#: __init__.py:175
+#: __init__.py:176
 msgid "Please write a valid email."
 msgstr "Veuillez inscrire une adresse email valide."
 
-#: __init__.py:178
+#: __init__.py:179
 msgid "You need to agree with this contest's conditions in order to participate."
 msgstr "Vous devez accepter les conditions de ce concours pour participer."
 
@@ -44,8 +45,7 @@ msgstr "Concours"
 msgid "Help"
 msgstr "Aide"
 
-#: templates/base.html:38
-#: templates/index.html:33
+#: templates/base.html:38 templates/index.html:36
 msgid "Submit"
 msgstr "Envoyer"
 
@@ -96,13 +96,17 @@ msgstr "J'accepte les conditions du concours."
 #: templates/form.html:92
 msgid ""
 "\n"
-"    Please notice that all data collected will be used for the Sugar Labs\n"
-"    Background Image contest only. It will not be used for any other purposes.\n"
+"    Please notice that all data collected will be used for the Sugar Labs"
+"\n"
+"    Background Image contest only. It will not be used for any other "
+"purposes.\n"
 "    "
 msgstr ""
 "\n"
-"    Veuillez noter que toutes les données recueillies seront utilisées exlusivement pour le\n"
-"    concours d'image d'arrière-plan de Sugar Labs. Elles ne seront pas utilisées à d'autres fins.\n"
+"    Veuillez noter que toutes les données recueillies seront utilisées "
+"exlusivement pour le\n"
+"    concours d'image d'arrière-plan de Sugar Labs. Elles ne seront pas "
+"utilisées à d'autres fins.\n"
 "    "
 
 #: templates/form.html:99
@@ -116,20 +120,29 @@ msgstr "Concours d'image d'arrière-plan Sugarlabs"
 #: templates/index.html:6
 msgid ""
 "\n"
-"Sugarlabs is glad to announce the first contest for Sugar Background Images.\n"
-"We'll choose 10 images that will form a pack of user-contributed backgrounds.\n"
+"Sugarlabs is glad to announce the first contest for Sugar Background "
+"Images.\n"
+"We'll choose 10 images that will form a pack of user-contributed "
+"backgrounds.\n"
 msgstr ""
 "\n"
-"Sugarlabs est heureux d'annoncer le premier concours d'image d'arrière-plan pour Sugar.\n"
-"Nous choisirons 10 images qui formeront un pack d'arrière-plans proposés par des utilisateurs.\n"
+"Sugarlabs est heureux d'annoncer le premier concours d'image d'arrière-"
+"plan pour Sugar.\n"
+"Nous choisirons 10 images qui formeront un pack d'arrière-plans proposés "
+"par des utilisateurs.\n"
 
 #: templates/index.html:16
 msgid "1 - Create your background image:"
 msgstr "1 - Créez votre image d'arrière-plan :"
 
 #: templates/index.html:18
-msgid "Be creative! You can use Paint or Turtle Blocks, Record to take photos, or any other Sugar activity."
-msgstr "Soyez créatifs ! Vous pouvez utiliser 'Dessiner' ou 'BlocsTortue', 'Enregistrer' pour prendre des photos, ou n'importe quelle autre activité Sugar."
+msgid ""
+"Be creative! You can use Paint or Turtle Blocks, Record to take photos, "
+"or any other Sugar activity."
+msgstr ""
+"Soyez créatifs ! Vous pouvez utiliser 'Dessiner' ou 'BlocsTortue', "
+"'Enregistrer' pour prendre des photos, ou n'importe quelle autre activité"
+" Sugar."
 
 #: templates/index.html:19
 msgid "You are not restricted to Sugar activities."
@@ -140,8 +153,12 @@ msgid "You can submit as many entries as you like."
 msgstr "Vous pouvez soumettre autant de soumissions que vous le souhaitez."
 
 #: templates/index.html:21
-msgid "Try to use size 1600 x 1200 pixels.  Or if you are using a Sugar activity, use its default size."
-msgstr "Essayez d'utiliser le format de 1600 x 1200 pixels.  Si vous utilisez une activté Sugar, utilisez ses dimensions par défaut."
+msgid ""
+"Try to use size 1600 x 1200 pixels.  Or if you are using a Sugar "
+"activity, use its default size."
+msgstr ""
+"Essayez d'utiliser le format de 1600 x 1200 pixels.  Si vous utilisez une"
+" activté Sugar, utilisez ses dimensions par défaut."
 
 #: templates/index.html:24
 msgid "2 - Follow these terms and conditions:"
@@ -152,8 +169,13 @@ msgid "Be the author of your entry. Derivative work is allowed too."
 msgstr "Soyez l'auteur de votre soumission. Les oeuvres dérivées sont autorisées. "
 
 #: templates/index.html:27
-msgid "Use the <a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC-by-sa</a> license, so everyone can enjoy your art!"
-msgstr "Utilisez la licence <a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC-by-sa</a> afin de permettre à chacun de profiter de votre art !"
+msgid ""
+"Use the <a href=\"http://creativecommons.org/licenses/by-sa/4.0/\">CC-by-"
+"sa</a> license, so everyone can enjoy your art!"
+msgstr ""
+"Utilisez la licence <a href=\"http://creativecommons.org/licenses/by-"
+"sa/4.0/\">CC-by-sa</a> afin de permettre à chacun de profiter de votre "
+"art !"
 
 #: templates/index.html:28
 msgid "Don't forget to submit it as PNG format!"
@@ -163,6 +185,10 @@ msgstr "N'oubliez pas de l'envoyer au format PNG !"
 msgid "3 - Make a significant contribution to Sugar:"
 msgstr "3 - Réalisez une contribution importante à Sugar :"
 
+#: templates/index.html:33
+msgid "You have time until May 31, 2014"
+msgstr "Vous avez jusqu'au 31 mai 2014"
+
 #: templates/steps.html:4
 msgid "How to test your background images"
 msgstr "Comment tester vos images d'arrière-plan"
@@ -170,11 +196,13 @@ msgstr "Comment tester vos images d'arrière-plan"
 #: templates/steps.html:6
 msgid ""
 "\n"
-"If you are using Sugar 0.100 or later, you can test your background image following\n"
+"If you are using Sugar 0.100 or later, you can test your background image"
+" following\n"
 "these steps.\n"
 msgstr ""
 "\n"
-"Si vous utilisez Sugar 0.100 ou plus récent, yous pourrez tester votre image d'arrière-plan en suivant\n"
+"Si vous utilisez Sugar 0.100 ou plus récent, yous pourrez tester votre "
+"image d'arrière-plan en suivant\n"
 "ces indications.\n"
 
 #: templates/steps.html:13
@@ -191,7 +219,9 @@ msgstr "3 - Copiez vos images dans le dossier Documents."
 
 #: templates/steps.html:28
 msgid "4 - Go to \"My Settings\" and then \"Background\" to select your image."
-msgstr "4 - Sélectionnez \"Mes paramètres\" puis \"Arrière-plan\" pour sélectionner votre image."
+msgstr ""
+"4 - Sélectionnez \"Mes paramètres\" puis \"Arrière-plan\" pour "
+"sélectionner votre image."
 
 #: templates/steps.html:33
 msgid "5 - It's ready!"
