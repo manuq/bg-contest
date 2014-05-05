@@ -184,7 +184,7 @@ def este_formu_vale(formu, archivos):
 def get_unique_filename(path, fn):
     fullpath = os.path.join(path, fn)
     if not os.path.exists(fullpath):
-        return fn
+        return fullpath
 
     for i in xrange(2, sys.maxint):
         unique_fn = '%s-%d' % (fn, i)
